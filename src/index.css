@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+  --color-primaryColor: #030712;
+  --color-secanderyColor: #b4b6b9;
+  --color-thirdColor: #151c29;
+}
+@layer utilities {
+  .font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* For Webkit browsers */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #c9cbce; /* Track color */
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color on hover */
+}
