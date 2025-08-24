@@ -56,7 +56,7 @@ function Navbar() {
       </button>
 
       <div
-        className={`sm:hidden flex flex-col items-center justify-center absolute w-full h-[100vh] top-0
+        className={`sm:hidden flex flex-col items-center justify-between absolute w-full h-[100vh] top-0
         p-[20px] text-[#B37CEB] z-10 bg-primaryColor ${
           menu === true
             ? "left-0 transition-all duration-300 ease-in-out"
@@ -69,7 +69,7 @@ function Navbar() {
         >
           <IoClose />
         </button>
-        <div className="flex flex-col items-center justify-start gap-[50px] py-[50px]">
+        <div className="flex flex-col items-center justify-center h-full gap-[30px]">
           {Links.map((link, index) => {
             return (
               <div
@@ -99,8 +99,6 @@ function Navbar() {
               </div>
             );
           })}
-        </div>
-        <div>
           <SocialMedia />
         </div>
       </div>
