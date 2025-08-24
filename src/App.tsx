@@ -10,10 +10,12 @@ function App() {
     <>
       <div className="bg-primaryColor">
         <Navbar />
-        <Home />
-        <AboutMe />
-        <Skills />
-        <Projects />
+        <div className="sm:px-[30px] px-[15px]">
+          <Home />
+          <AboutMe />
+          <Skills />
+          <Projects />
+        </div>
         <Contact />
       </div>
     </>

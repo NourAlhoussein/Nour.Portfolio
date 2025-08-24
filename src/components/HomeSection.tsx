@@ -4,15 +4,15 @@ import TitlePages from "./TitlePages";
 // import { NavLink } from "react-router";
 function HomeSection() {
   return (
-    <div className="sm:px-[30px] px-[15px] text-center text-secanderyColor flex flex-col font-roboto sm:gap-[50px] gap-[30px] h-[100vh] w-full items-center justify-center">
+    <div className="text-center text-secanderyColor flex flex-col font-roboto sm:gap-[50px] gap-[30px] h-[100vh] w-full items-center justify-center">
       <img
-        className="sm:w-[150px] sm:h-[150px] w-[125px] h-[125px] border-2 border-thirdColor rounded-full mt-[100px]"
+        className="w-[150px] h-[150px] border-2 border-thirdColor rounded-full mt-[100px]"
         src={picture}
         alt="My photo"
       />
-      <TitlePages name="Nour Alhoussein" />
+      <TitlePages name="Nour Ahmad Alhoussein" />
       <div className="sm:text-3xl text-xl font-bold">
-        Front End Developer (React Js)
+        Front End Developer
       </div>
       <div className="sm:text-lg text-sm">
         "Creating Exceptional Digital Experiences with React.js." Dedicated to

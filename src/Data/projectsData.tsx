@@ -2,9 +2,9 @@ import type { project } from "../types";
 import l from "../assets/images/l.png";
 import Flora from "../assets/images/Flora.webp";
 import ProductSales from "../assets/images/Product Sales.webp";
-import Firnature from "../assets/images/Firnature.webp";
+import Firnature from "../assets/images/firnature.png";
 import Cleaning from "../assets/images/cleaning.webp";
-import StyleLoom from "../assets/images/StyleLoom.png";
+import StyleLoom from "../assets/images/Style.Loom1.png"
 
 const projectsArray: project[] = [
   {

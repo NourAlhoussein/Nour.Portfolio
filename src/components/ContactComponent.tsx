@@ -10,7 +10,7 @@ function Contact() {
     <div className="py-[50px] w-full text-secanderyColor">
       <div className="w-full h-[1px] bg-[#B37CEB] mb-[50px]"></div>
       <div className="flex flex-col items-center justify-start text-center sm:px-[30px] px-[15px]">
-       <TitlePages name="Contact" />
+        <TitlePages name="Contact" />
         <div className="m:text-lg text-sm sm:mt-[80px] mt-[40px]">
           Interested in working together? Let's have a conversation.
         </div>
@@ -40,9 +40,9 @@ function Contact() {
             View Resume
           </span>
         </a>
-      </div>
-      <div className="mt-[30px]">
-        <SocialMedia />
+        <div className="mt-[30px]">
+          <SocialMedia />
+        </div>
       </div>
     </div>
   );
