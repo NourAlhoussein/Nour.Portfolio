@@ -6,7 +6,7 @@ function HomeSection() {
   return (
     <div className="text-center text-secanderyColor flex flex-col font-roboto sm:gap-[50px] gap-[30px] h-[100vh] w-full items-center justify-center">
       <img
-        className="w-[150px] h-[150px] border-2 border-thirdColor rounded-full mt-[100px]"
+        className="w-[150px] h-[150px] border-2 border-thirdColor rounded-full sm:mt-[100px] mt-[60px]"
         src={picture}
         alt="My photo"
       />

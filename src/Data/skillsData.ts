@@ -10,7 +10,7 @@ const skillsArray: skill[] = [
   { id: 6, name: "RESTful APIs" },
   // { id: 7, name: "WebSocket API" },
   // { id: 8, name: "Context API" },
-  { id: 9, name: "Redux & Redux Toolkit" },
+  { id: 9, name: "Redux Toolkit" },
   // { id: 10, name: "Next js" },
   { id: 11, name: "Git & GitHub" },
   { id: 12, name: "Respnsive Design" },

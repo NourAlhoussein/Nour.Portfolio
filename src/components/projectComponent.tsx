@@ -1,20 +1,41 @@
 import { type project } from "../types";
 import { GoArrowRight } from "react-icons/go";
+import { motion } from "framer-motion";
 interface projectProp {
   project: project;
+  index: number;
 }
-function projectComponent({ project }: projectProp) {
+function projectComponent({ project, index }: projectProp) {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.2,
+        delay: index * 0.1, // stagger effect
+        ease: "easeInOut",
+      },
+    }),
+  };
   return (
-    <div className="max-w-[400px] mb-[20px]">
+    <motion.div
+      className="max-w-[400px] mb-[20px]"
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      custom={index}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <img
         className="sm:h-[280px] h-[250px] w-full rounded-t-xl"
         src={project.image}
         alt=""
       />
-      <div
-        className="flex flex-col justify-between p-[20px] sm:gap-[20px] gap-[10px] rounded-b-xl bg-thirdColor text-secanderyColor h-[220px]"
-      >
-        <div className="text-2xl font-medium   hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#6B6EF6] hover:to-[#B37CEB]">{project.title}</div>
+      <div className="flex flex-col justify-between p-[20px] sm:gap-[20px] gap-[10px] rounded-b-xl bg-thirdColor text-secanderyColor h-[220px]">
+        <div className="text-2xl font-medium   hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#6B6EF6] hover:to-[#B37CEB]">
+          {project.title}
+        </div>
         <div className="flex items-start h-full overflow-y-auto scrollbar-thin text-sm">
           {project.description}
         </div>
@@ -29,7 +50,7 @@ function projectComponent({ project }: projectProp) {
           </span>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

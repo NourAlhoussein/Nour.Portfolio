@@ -37,7 +37,7 @@ const projectsArray: project[] = [
     title: "Product Sales",
     description:
       "A project to design a dashboard for a product sales website that is responsive to all screens using Vite, written in typescript, creating pages using routerprovider, formatting using React bootstrap, and applying connectivity with API.",
-    link: "",
+    link: "https://nouralhoussein.github.io/Task_5/",
   },
   {
     id: 4,

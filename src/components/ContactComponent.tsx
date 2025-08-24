@@ -32,13 +32,14 @@ function Contact() {
         <a
           href={cvFile}
           download="Nour Alhoussein.pdf"
-          className="flex flex-row items-center justify-center bg-thirdColor sm:p-[15px] p-[10px] sm:text-lg text-base rounded-md cursor-pointer hover:border-1
-         hover:border-secanderyColor mt-[20px]"
+          className="flex flex-row items-center justify-center sm:p-[15px] p-[10px] sm:text-lg text-base rounded-md cursor-pointer
+         mt-[20px] text-primaryColor bg-gradient-to-r from-[#6B6EF6] to-[#B37CEB]
+             bg-[length:200%_100%] bg-left 
+             transition-all duration-300 ease-in-out 
+             hover:bg-right hover:bg-gradient-to-r hover:from-[#B37CEB] hover:to-[#6B6EF6]"
         >
           <BsFileEarmarkPdfFill />
-          <span className="ml-[10px] font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#6B6EF6] to-[#B37CEB]">
-            View Resume
-          </span>
+          <span className="ml-[10px] font-medium">View Resume</span>
         </a>
         <div className="mt-[30px]">
           <SocialMedia />

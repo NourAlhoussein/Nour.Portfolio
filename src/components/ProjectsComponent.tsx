@@ -46,7 +46,7 @@ function Projects() {
     <>
       <div className="grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:mt-[80px] mt-[40px] gap-[60px] text-secanderyColor">
         {projectsArray.map((project, index) => (
-          <ProjectComponent key={index} project={project} />
+          <ProjectComponent key={index} project={project} index={index} />
         ))}
       </div>
       {/* <div>
