@@ -15,3 +15,7 @@ export interface project {
   description: string;
   link: string;
 }
+
+export interface Title {
+  name: string;
+}

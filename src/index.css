@@ -10,6 +10,11 @@
   .font-roboto {
     font-family: "Roboto", sans-serif;
   }
+  .font-rubik {
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

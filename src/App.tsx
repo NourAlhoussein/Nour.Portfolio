@@ -1,13 +1,17 @@
 import "./App.css";
-import HomeSection from "./components/HomeSection";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import AboutMe from "./pages/AboutMe";
 function App() {
   return (
     <>
       <div className="bg-primaryColor">
-        <HomeSection />
+        <Navbar />
+        <Home />
+        <AboutMe />
         <Skills />
         <Projects />
         <Contact />

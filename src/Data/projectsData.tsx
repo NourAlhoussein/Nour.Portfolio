@@ -1,5 +1,5 @@
 import type { project } from "../types";
-import littleLearner from "../assets/images/little Learner.webp";
+import l from "../assets/images/l.png";
 import Flora from "../assets/images/Flora.webp";
 import ProductSales from "../assets/images/Product Sales.webp";
 import Firnature from "../assets/images/Firnature.webp";
@@ -17,7 +17,7 @@ const projectsArray: project[] = [
   },
   {
     id: 1,
-    image: littleLearner,
+    image: l,
     title: "Little Learner",
     description:
       "This project is built using react js, Vite, and React Router Dom and is responsive to all screens.",
