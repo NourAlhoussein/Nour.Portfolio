@@ -8,13 +8,13 @@ interface projectProp {
 function projectComponent({ project, index }: projectProp) {
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: (index: number) => ({
+    visible: (custom: number) => ({
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.2,
-        delay: index * 0.1, // stagger effect
-        ease: "easeInOut",
+        duration: 0.3,
+        delay: custom * 0.1, // use the custom prop passed to motion.div
+        ease: "easeInOut" as const,
       },
     }),
   };
@@ -24,7 +24,7 @@ function projectComponent({ project, index }: projectProp) {
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      custom={index}
+      custom={index} // this passes the index to the variant function
       viewport={{ once: true, amount: 0.2 }}
     >
       <img
