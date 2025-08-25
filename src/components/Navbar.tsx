@@ -6,8 +6,7 @@ import SocialMedia from "./SocialMedia";
 import Links from "../Data/NavbarData";
 function Navbar() {
   const [menu, setMenu] = useState<boolean>(false);
-  const [activeBigTab, setActiveBigTab] = useState<string>("Home");
-  const [activeSmallTab, setActiveSmallTab] = useState<string>("Home");
+  const [active, setActive] = useState("Home");
   const viewMenu = () => {
     setMenu((prev: boolean) => !prev);
   };
@@ -19,6 +18,7 @@ function Navbar() {
       <div className="font-rubik lg:text-4xl text-3xl text-[#B37CEB] cursor-pointer">
         Nour
       </div>
+      {/* Desktup Navbar */}
       <div className="sm:flex hidden lg:text-xl text-md text-[#B37CEB]">
         {Links.map((link, index) => {
           return (
@@ -30,24 +30,26 @@ function Navbar() {
                 to={link.content}
                 smooth={true}
                 duration={800}
-                className={`cursor-pointer lg:text-lg sm:text-sm hover:text-[#B37CEB] sm:px-[10px] ${
-                  activeBigTab === link.name ? "text-secanderyColor" : ""
+                spy={true}
+                offset={-120}
+                activeClass="is-active"
+                onSetActive={() => setActive(link.name)}
+                className={`peer cursor-pointer lg:text-lg sm:text-sm hover:text-[#B37CEB] sm:px-[10px] ${
+                  active === link.name ? "is-active text-secanderyColor" : ""
                 }`}
-                onClick={() => {
-                  setActiveBigTab(`${link.name}`);
-                }}
               >
                 {link.name}
               </Link>
               <div
-                className={`bg-[#B37CEB] h-[1px] transition-all duration-500 ease-in-out ${
-                  activeBigTab === link.name ? "w-[80%]" : "w-[0px]"
-                }`}
+                className="bg-[#B37CEB] h-[1px] transition-all duration-500 ease-in-out
+                  w-0 peer-[.is-active]:w-[80%]"
               ></div>
             </div>
           );
         })}
       </div>
+
+      {/* Mobile Navbar */}
       <button
         onClick={viewMenu}
         className="sm:hidden font-rubik text-2xl text-[#B37CEB]"
@@ -57,7 +59,7 @@ function Navbar() {
 
       <div
         className={`sm:hidden flex flex-col items-center justify-between absolute w-full h-[100vh] top-0
-        p-[20px] text-[#B37CEB] z-10 bg-primaryColor ${
+        p-[20px] text-[#B37CEB] z-50 bg-primaryColor ${
           menu === true
             ? "left-0 transition-all duration-300 ease-in-out"
             : "-left-[100%] transition-all duration-300 ease-in-out"
@@ -81,21 +83,17 @@ function Navbar() {
                   to={link.content}
                   smooth={true}
                   duration={800}
-                  className={`cursor-pointer hover:text-[#B37CEB] md:px-[10px] px-[5px] ${
-                    activeSmallTab === link.name ? "text-secanderyColor" : ""
+                  spy={true}
+                  offset={-80}
+                  activeClass="is-active"
+                  onSetActive={() => setActive(link.name)}
+                  className={`peer cursor-pointer hover:text-[#B37CEB] md:px-[10px] px-[5px]  ${
+                    active === link.name ? "is-active text-secanderyColor" : ""
                   }`}
-                  onClick={() => {
-                    setActiveSmallTab(`${link.name}`);
-                    viewMenu();
-                  }}
                 >
                   {link.name}
                 </Link>
-                <div
-                  className={`bg-[#B37CEB] h-[1px] transition-all duration-500 ease-in-out ${
-                    activeSmallTab === link.name ? "w-[80%]" : "w-[0px]"
-                  }`}
-                ></div>
+                <div className="bg-[#B37CEB] h-[1px] transition-all duration-500 ease-in-out w-0 peer-[.is-active]:w-[80%]"></div>
               </div>
             );
           })}

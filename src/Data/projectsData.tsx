@@ -31,14 +31,14 @@ const projectsArray: project[] = [
       "A project for reserving apartments and real estate (flora landing page) in a responsive manner for all small, medium and large screens (Responsive) using React Vite built in TypeScript language.",
     link: "https://nouralhoussein.github.io/Task_4/",
   },
-  {
-    id: 3,
-    image: ProductSales,
-    title: "Product Sales",
-    description:
-      "A project to design a dashboard for a product sales website that is responsive to all screens using Vite, written in typescript, creating pages using routerprovider, formatting using React bootstrap, and applying connectivity with API.",
-    link: "https://nouralhoussein.github.io/Task_5/",
-  },
+  // {
+  //   id: 3,
+  //   image: ProductSales,
+  //   title: "Product Sales",
+  //   description:
+  //     "A project to design a dashboard for a product sales website that is responsive to all screens using Vite, written in typescript, creating pages using routerprovider, formatting using React bootstrap, and applying connectivity with API.",
+  //   link: "https://nouralhoussein.github.io/Task_5/",
+  // },
   {
     id: 4,
     image: Firnature,
