@@ -84,7 +84,7 @@ function Navbar() {
                   smooth={true}
                   duration={800}
                   spy={true}
-                  offset={-120}
+                  offset={-200}
                   activeClass="is-active"
                   onSetActive={() => setActive(link.name)}
                   className={`peer cursor-pointer hover:text-[#B37CEB] md:px-[10px] px-[5px]  ${

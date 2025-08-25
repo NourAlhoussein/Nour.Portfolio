@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div className="py-[50px] w-full text-secanderyColor">
       <div className="w-full h-[1px] bg-[#B37CEB] mb-[50px]"></div>
-      <div className="flex flex-col items-center justify-start text-center py-[30px] sm:px-[30px] px-[15px]">
+      <div className="flex flex-col items-center justify-start text-center sm:py-[30px] py-[50px] sm:px-[30px] px-[15px]">
         <TitlePages name="Contact" />
         <div className="m:text-lg text-sm sm:mt-[80px] mt-[40px]">
           Interested in working together? Let's have a conversation.
