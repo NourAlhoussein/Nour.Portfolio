@@ -44,13 +44,17 @@ function AboutMe() {
           Syriatel{" "}
         </a>
         , which strengthened my expertise in building scalable and efficient web
-        applications. My objective is to expand my professional experience, and
-        I am currently seeking new opportunities in the field of software
-        engineering. I am enthusiastic about contributing to a forward-thinking
-        team where my skills in React.js and passion for problem-solving can
-        make a meaningful impact. Let’s connect to explore potential
-        collaborations and discuss how my background aligns with your
-        organization’s goals.
+        applications. I became able to build projects of any size using vanilla
+        JavaScript or work with React.js to leverage both JavaScript and
+        TypeScript. I can design and develop applications at an advanced level,
+        effectively handling state management and working with APIs to implement
+        full CRUD operations (GET, POST, PUT, DELETE). My objective is to expand
+        my professional experience, and I am currently seeking new opportunities
+        in the field of software engineering. I am enthusiastic about
+        contributing to a forward-thinking team where my skills in React.js and
+        passion for problem-solving can make a meaningful impact. Let’s connect
+        to explore potential collaborations and discuss how my background aligns
+        with your organization’s goals.
       </motion.div>
     </div>
   );
