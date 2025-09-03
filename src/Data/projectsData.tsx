@@ -4,11 +4,20 @@ import Flora from "../assets/images/Flora.webp";
 // import ProductSales from "../assets/images/Product Sales.webp";
 import Firnature from "../assets/images/firnature.png";
 import Cleaning from "../assets/images/cleaning.webp";
-import StyleLoom from "../assets/images/Style.Loom1.png"
+import StyleLoom from "../assets/images/Style.Loom1.png";
+import Blog from "../assets/images/Blogs.png";
 
 const projectsArray: project[] = [
   {
     id: 0,
+    image: Blog,
+    title: "The Blogs",
+    description:
+      "Designing responsive blogs for all screen sizes (small, medium, and large) in dark and light modes using Vite, written in TypeScript, creating pages using a router provider, formatting them using Tailwind, and implementing a status management application.",
+    link: "https://nouralhoussein.github.io/Task_6_Blogs",
+  },
+  {
+    id: 1,
     image: StyleLoom,
     title: "Style.Loom",
     description:
@@ -16,7 +25,7 @@ const projectsArray: project[] = [
     link: "https://nouralhoussein.github.io/Style.Loom",
   },
   {
-    id: 1,
+    id: 2,
     image: l,
     title: "Little Learner",
     description:
@@ -24,7 +33,7 @@ const projectsArray: project[] = [
     link: "https://nouralhoussein.github.io/Task_3",
   },
   {
-    id: 2,
+    id: 3,
     image: Flora,
     title: "Flora Project",
     description:
@@ -32,7 +41,7 @@ const projectsArray: project[] = [
     link: "https://nouralhoussein.github.io/Task_4/",
   },
   // {
-  //   id: 3,
+  //   id: 4,
   //   image: ProductSales,
   //   title: "Product Sales",
   //   description:
@@ -40,7 +49,7 @@ const projectsArray: project[] = [
   //   link: "https://nouralhoussein.github.io/Task_5/",
   // },
   {
-    id: 4,
+    id: 5,
     image: Firnature,
     title: "Firnature",
     description:
@@ -48,7 +57,7 @@ const projectsArray: project[] = [
     link: "https://nouralhoussein.github.io/Firnature/#home",
   },
   {
-    id: 5,
+    id: 6,
     image: Cleaning,
     title: "Cleaning Project",
     description:
