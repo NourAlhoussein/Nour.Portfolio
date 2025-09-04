@@ -86,7 +86,10 @@ function Navbar() {
                   spy={true}
                   offset={-200}
                   activeClass="is-active"
-                  onSetActive={() => setActive(link.name)}
+                  onSetActive={() => {
+                    setActive(link.name);
+                    setMenu(false);
+                  }}
                   className={`peer cursor-pointer hover:text-[#B37CEB] md:px-[10px] px-[5px]  ${
                     active === link.name ? "is-active text-secanderyColor" : ""
                   }`}
