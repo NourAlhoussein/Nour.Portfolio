@@ -1,4 +1,4 @@
-import picture from "../assets/images/picture2.jpg";
+import picture from "../assets/images/picture3.jpg";
 import TitlePages from "./TitlePages";
 // import { IoIosArrowDown } from "react-icons/io";
 // import { NavLink } from "react-router";

@@ -6,6 +6,7 @@ import Firnature from "../assets/images/firnature.png";
 import Cleaning from "../assets/images/cleaning.webp";
 import StyleLoom from "../assets/images/Style.Loom1.png";
 import Blog from "../assets/images/Blogs.png";
+import imgTask7 from "../assets/images/task7.png"
 
 const projectsArray: project[] = [
   {
@@ -26,14 +27,22 @@ const projectsArray: project[] = [
   },
   {
     id: 2,
+    image: imgTask7,
+    title: "Tours to tuskany",
+    description:
+      "Project using Next js, tailwind and typescript",
+    link: "https://task-7-auyq.vercel.app/",
+  },
+  {
+    id: 3,
     image: l,
     title: "Little Learner",
     description:
       "This project is built using react js, Vite, and React Router Dom and is responsive to all screens.",
-    link: "https://nouralhoussein.github.io/Task_3",
+    link: "https://nouralhoussein.github.io/Task_3_V9",
   },
   {
-    id: 3,
+    id: 4,
     image: Flora,
     title: "Flora Project",
     description:
@@ -41,7 +50,7 @@ const projectsArray: project[] = [
     link: "https://nouralhoussein.github.io/Task_4/",
   },
   // {
-  //   id: 4,
+  //   id: 5,
   //   image: ProductSales,
   //   title: "Product Sales",
   //   description:
@@ -49,7 +58,7 @@ const projectsArray: project[] = [
   //   link: "https://nouralhoussein.github.io/Task_5/",
   // },
   {
-    id: 5,
+    id: 6,
     image: Firnature,
     title: "Firnature",
     description:
@@ -57,7 +66,7 @@ const projectsArray: project[] = [
     link: "https://nouralhoussein.github.io/Firnature/#home",
   },
   {
-    id: 6,
+    id: 7,
     image: Cleaning,
     title: "Cleaning Project",
     description:
