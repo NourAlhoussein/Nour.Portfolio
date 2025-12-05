@@ -1,5 +1,7 @@
 import TitlePages from "../components/TitlePages";
 import { motion } from "framer-motion";
+import letterFile from "../assets/pdf/Nour_Ahmad_Alhoussein_Recommendation.pdf";
+import certificateFile from "../assets/pdf/Nour Ahmad Alhoussein.pdf";
 function AboutMe() {
   return (
     <div
@@ -55,6 +57,23 @@ function AboutMe() {
         passion for problem-solving can make a meaningful impact. Let’s connect
         to explore potential collaborations and discuss how my background aligns
         with your organization’s goals.
+        <h3 className="font-bold text-secanderyColor mt-1">Links:</h3>
+        <div className="flex flex-col">
+          <a
+            href={certificateFile}
+            download="Nour Ahmad Alhoussein.pdf"
+            className="font-bold"
+          >
+            • View Certificate (PDF)
+          </a>
+          <a
+            href={letterFile}
+            download="Nour_Ahmad_Alhoussein_Recommendation.pdf"
+            className="font-bold"
+          >
+            • View Reference Letter (PDF)
+          </a>
+        </div>
       </motion.div>
     </div>
   );
